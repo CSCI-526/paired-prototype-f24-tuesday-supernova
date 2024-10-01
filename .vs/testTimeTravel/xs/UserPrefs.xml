@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{6384DE9E-F03C-39E4-464C-A18AAA2A4C1B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EndScene.cs">
+    <Files>
+      <File FileName="Assets/StemMesh.cs" Line="77" Column="1" />
+      <File FileName="Assets/StemLine.cs" Line="26" Column="43" />
+      <File FileName="Assets/OldmanControl.cs" Line="22" Column="58" />
+      <File FileName="Assets/BackGroundChange.cs" Line="24" Column="47" />
+      <File FileName="Assets/EndScene.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="testTimeTravel" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="EndScene.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b79df0ce-2ed5-4423-b1df-f207cbb99fef" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
