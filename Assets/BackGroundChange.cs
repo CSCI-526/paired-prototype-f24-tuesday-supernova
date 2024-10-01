@@ -11,6 +11,7 @@ public class BackGround : MonoBehaviour
     // Expose the GameObjects as public fields for configuration in the Unity editor
     public GameObject backgroundObject;
     public GameObject stemObject;
+<<<<<<< HEAD
     private LineRenderer lineRenderer;
     public GameObject playerObject;
 
@@ -18,10 +19,16 @@ public class BackGround : MonoBehaviour
     private bool isPast = true;
     private bool isStemPickedUp = false;
 
+=======
+
+    private SpriteRenderer backgroundSpriteRenderer;
+    private bool isPast = true;
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917
 
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
 
         // Get the LineRenderer component
         lineRenderer = stemObject.GetComponent<LineRenderer>();
@@ -31,12 +38,19 @@ public class BackGround : MonoBehaviour
             Debug.LogError("LineRenderer component is missing!");
         }
 
+=======
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917
         // If no colors are specified, default to two colors
         if (colors.Length == 0)
         {
             Color lightblue = new Color(0.68f, 0.85f, 0.90f);
+<<<<<<< HEAD
             Color darkblue = new Color(59f / 255f, 76f / 255f, 107f / 255f);
             colors = new Color[] { lightblue, darkblue };
+=======
+            Color Darkblue = new Color(59f / 255f, 76f / 255f, 107f / 255f);
+            colors = new Color[] { lightblue, Darkblue };
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917
         }
 
         // Get the SpriteRenderer component from the assigned GameObject
@@ -58,6 +72,7 @@ public class BackGround : MonoBehaviour
         // Check if the R key is pressed
         if (Input.GetKeyDown(KeyCode.R))
         {
+<<<<<<< HEAD
             if (isStemPickedUp)
             {
                 return;
@@ -65,6 +80,11 @@ public class BackGround : MonoBehaviour
                 // Switch to the next color
                 currentColorIndex = (currentColorIndex + 1) % colors.Length;
             
+=======
+            // Switch to the next color
+            currentColorIndex = (currentColorIndex + 1) % colors.Length;
+
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917
             // Set the SpriteRenderer color
             if (backgroundSpriteRenderer != null)
             {
@@ -83,6 +103,7 @@ public class BackGround : MonoBehaviour
                 }
                 else
                 {
+<<<<<<< HEAD
                      stemObject.SendMessage("ExtendStem", SendMessageOptions.DontRequireReceiver);
                     
                 }
@@ -138,3 +159,11 @@ public class BackGround : MonoBehaviour
     }
 }
 
+=======
+                    stemObject.SendMessage("ExtendStem", SendMessageOptions.DontRequireReceiver);
+                }
+            }
+        }
+    }
+}
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917

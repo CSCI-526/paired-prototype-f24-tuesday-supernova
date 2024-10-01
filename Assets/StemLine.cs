@@ -58,6 +58,7 @@ public class StemGrowth : MonoBehaviour
         lineRenderer.positionCount = spinePoints.Count;
         lineRenderer.SetPositions(spinePoints.ToArray());
 
+<<<<<<< HEAD
         // Update the width growth factor (from 0.3 to 1)
         float currentWidthFactor = Mathf.Lerp(0.3f, 1f, 0);
 
@@ -67,6 +68,8 @@ public class StemGrowth : MonoBehaviour
         widthCurve.AddKey(1f, 0f);                               // Zero width at the top (100% along the length)
         lineRenderer.widthCurve = widthCurve;
 
+=======
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917
         // Convert angle to radians and calculate direction
         float angleInRadians = growthAngle * Mathf.Deg2Rad;
         Vector3 direction = new Vector3(Mathf.Cos(angleInRadians), Mathf.Sin(angleInRadians), 0).normalized;
@@ -161,12 +164,15 @@ public class StemGrowth : MonoBehaviour
         growthCoroutine = StartCoroutine(GrowStem());
     }
 
+<<<<<<< HEAD
 
     public void PositionDidChange() {
         InitializeStem();
     }
 
 
+=======
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917
 }
 
 

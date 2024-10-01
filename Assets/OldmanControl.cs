@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
+<<<<<<< HEAD
 
     public bool IsOnGround() {
         return isGrounded;
@@ -43,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
     {
         return GroundCheck1.position;
     }
+=======
+>>>>>>> f386d93dd70ec1224a115aa2b15e2f128f0cf917
 }
 
 
